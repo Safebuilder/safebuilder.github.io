@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<TITLE>Safe Site Shelter</TITLE>
+<div class="topnav">
+<strong><a class="active" href="#home">Home</a></strong>
+<strong><a href="sss2.html">About</a></strong>
+<strong><a href="sss3">Help</a></strong>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." title="Type in anything">
+<ul id="myUL">
+  <li><a href="#">Websites</a></li>
+  <li><a href="#">Games</a></li>
+
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+<STYLE>
+body {
+  background-image: url('BNZxzM.png');
+}
+</STYLE>
+
+<h1 style="font-family:verdana; color:#000066">Safe Site Shelter</h1>
+<p1 style="font-family:verdana; color:#000000"><strong>The internet can be used for lots of things - learning, social media, playing video games and watching the lastest videos, but what if you encounter a problem?</strong> Watch this video to find out!</p1>
+
+<video width="1540" height="760" controls >
+<source src="Being Safe on the Internet.mp4" type="video/mp4">
+
+</video>
+
+<h2 style="font-family:verdana; color:#000066">Some tips to help you</h2>
